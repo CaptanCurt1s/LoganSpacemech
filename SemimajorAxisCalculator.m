@@ -19,6 +19,9 @@ V1j = input('θ component of V: ');
 V1 = [V1i,V1j,0];
 %Specifci Energy calculation(Seen in SpecificEnergyCalculator.m)
 V1mag = norm(V1);
+
+%just split the specific engergy equation into 2 parts to make it easier to
+%read
 part1eq = (V1mag^2)/2;
 part2eq = Mu/R;
 SpeEng = part1eq - part2eq;

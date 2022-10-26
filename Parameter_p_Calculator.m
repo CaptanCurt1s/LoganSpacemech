@@ -24,6 +24,7 @@ V1 = [V1i,V1j,0];
 H = cross(R1,V1);
 Hmag = norm(H);
 
+%calculating p
 param = (Hmag^2)/Mu;
 
 

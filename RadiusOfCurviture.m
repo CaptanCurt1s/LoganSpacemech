@@ -25,6 +25,9 @@ Ut = V1/V1norm;
 Ub = VcrosA/VcrosAM;
 Un = cross(Ub,Ut);
 An = dot(A1,Un);
+
+%Radius of curvature
 RoCurv = (V1norm^2)/An;
+
 fprintf('Radius Of Curviture:%.5f\n', join(string(RoCurv), ','));
 

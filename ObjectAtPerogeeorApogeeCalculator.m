@@ -21,14 +21,19 @@ gama = input('input the gamma value(Flight path angle): ');
 r = rEarth + alt;
 h = v*r;
 p = (h^2)/Mu;
+
 %ecosf = (p/r)-1
 leftsideeq = (p/r)-1;
 
 %if the left side of the equation is negative then cosf must be negative so
-%it is at 0 or 180deg aka apogee, if posititve its at perogee
+%it is at 0 or 180deg aka apogee, to check if it is at perogee, it is
+%either at pi/2 or 3pi/2 wich both of give 0 so if the equation is equal to
+%zero, then it is in perogee
 if leftsideeq >0
-    fprintf('Perogee\n');
+    fprintf('between one of \n');
+elseif leftsideeq == 0
+     fprintf('Perogee\n');
 elseif  leftsideeq <0
-    fprintf('Apogee\n')
+    fprintf('Apogee\n');
 end
 

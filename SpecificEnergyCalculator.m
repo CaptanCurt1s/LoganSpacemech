@@ -21,5 +21,6 @@ V1mag = norm(V1);
 part1eq = (V1mag^2)/2;
 part2eq = Mu/R;
 SpeEng = part1eq - part2eq;
+
 fprintf('Specific Energy ε: %.5f\n', join(string(SpeEng), ','));
 

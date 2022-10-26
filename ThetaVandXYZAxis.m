@@ -1,5 +1,5 @@
 % -------------------------------------------
-%Angle between a Vector and the XYZ axese
+%Angle between a Vector and the XYZ axes
 % -------------------------------------------
 
 
